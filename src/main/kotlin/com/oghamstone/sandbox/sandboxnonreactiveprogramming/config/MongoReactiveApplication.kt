@@ -1,4 +1,4 @@
-package com.oghamstone.sandbox.sandboxreactiveprogramming.config
+package com.oghamstone.sandbox.sandboxnonreactiveprogramming.config
 
 import com.mongodb.ConnectionString
 import com.mongodb.MongoClientSettings

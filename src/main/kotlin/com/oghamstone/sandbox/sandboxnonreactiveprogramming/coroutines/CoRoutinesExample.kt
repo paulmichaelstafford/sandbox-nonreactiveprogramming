@@ -1,4 +1,4 @@
-package com.oghamstone.sandbox.sandboxreactiveprogramming.coroutines
+package com.oghamstone.sandbox.sandboxnonreactiveprogramming.coroutines
 
 import kotlinx.coroutines.*
 import kotlin.random.Random

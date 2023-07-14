@@ -1,4 +1,4 @@
-package com.oghamstone.sandbox.sandboxreactiveprogramming
+package com.oghamstone.sandbox.sandboxnonreactiveprogramming
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.boot.autoconfigure.SpringBootApplication

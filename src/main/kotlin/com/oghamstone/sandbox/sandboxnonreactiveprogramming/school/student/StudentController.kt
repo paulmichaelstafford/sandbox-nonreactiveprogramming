@@ -1,4 +1,4 @@
-package com.oghamstone.sandbox.sandboxreactiveprogramming.school.student
+package com.oghamstone.sandbox.sandboxnonreactiveprogramming.school.student
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable

@@ -1,4 +1,4 @@
-package com.oghamstone.sandbox.sandboxreactiveprogramming.school.student
+package com.oghamstone.sandbox.sandboxnonreactiveprogramming.school.student
 
 import jakarta.annotation.PostConstruct
 import org.springframework.data.mongodb.core.MongoTemplate
