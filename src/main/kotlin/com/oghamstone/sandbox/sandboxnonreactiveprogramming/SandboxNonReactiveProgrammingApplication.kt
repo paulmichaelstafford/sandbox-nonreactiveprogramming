@@ -6,8 +6,8 @@ import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRep
 
 @SpringBootApplication
 @EnableReactiveMongoRepositories
-class SandboxReactiveProgrammingApplication
+class SandboxNonReactiveProgrammingApplication
 
 fun main(args: Array<String>) {
-	runApplication<SandboxReactiveProgrammingApplication>(*args)
+	runApplication<SandboxNonReactiveProgrammingApplication>(*args)
 }
