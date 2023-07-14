@@ -6,7 +6,7 @@ spring:
         async:
             request-timeout: 20000
     application:
-        name: "ReactiveProgramming"
+        name: "NonReactiveProgramming"
     data:
         mongodb:
             host: 'mongodb'
