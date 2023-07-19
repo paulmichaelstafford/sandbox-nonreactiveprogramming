@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "sandboxnonreactiveprogramming.fullname" . }}
+  labels:
+    {{- include "sandboxnonreactiveprogramming.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+      nodePort:  {{ .Values.service.nodePort }}
+  selector:
+    {{- include "sandboxnonreactiveprogramming.selectorLabels" . | nindent 4 }}

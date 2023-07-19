@@ -20,6 +20,7 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 	implementation("com.google.code.gson:gson:2.10.1")
@@ -37,5 +38,17 @@ tasks.withType<Test> {
 	useJUnitPlatform()
 }
 
+abstract class PrintVersion : DefaultTask() {
+	@Input
+	var versionToPrint: Any = ""
+
+	@TaskAction
+	fun greet() {
+		println(versionToPrint)
+	}
+}
+tasks.register<PrintVersion>("printVersion") {
+	versionToPrint = version
+}
 
 
